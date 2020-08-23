@@ -1,0 +1,33 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  left: 24px;
+  top: 24px;
+  width: 100%;
+}
+
+section {
+  display: grid;
+  /* Set to column layout, with each of the two colums
+  taking 50% [1 fraction each] of the total width */
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+section div.split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section div.slides {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
