@@ -7,6 +7,7 @@ header {
   position: fixed;
   left: 24px;
   top: 24px;
+  z-index: 1;
   width: 100%;
 }
 
@@ -32,9 +33,14 @@ section div.split:first-child {
 
 section div.slides {
   width: 500px;
-  height: auto;
+  height: 750px;
+  position: relative;
 }
 
 section div.info {
   max-width: 480px;
+}
+
+section img {
+  position: absolute;
 }
