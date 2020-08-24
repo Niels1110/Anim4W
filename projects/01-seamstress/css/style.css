@@ -24,10 +24,17 @@ section div.split {
   justify-content: center;
 }
 
+/* Add a different bg color to the first div in the 
+the sections */
+section div.split:first-child {
+  background: #111111;
+}
+
 section div.slides {
   width: 500px;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: auto;
+}
+
+section div.info {
+  max-width: 480px;
 }

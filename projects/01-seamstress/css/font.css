@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "PT Root";
+  src: url(assets/ptroot.woff2);
+}
+
+section h2 {
+  line-height: 1.3;
+  font-size: 32px;
+}
+
+section p {
+  margin: 32px 0 32px 0;
+  font-size: 20px;
+  line-height: 1.4;
+}
