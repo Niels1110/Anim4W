@@ -1,23 +1,27 @@
-const slides = document.querySelector("section div.slides");
+const slides = document.querySelectorAll("section div.slides");
 
-// Pick all the images in 'Slides'
-const images = slides.querySelectorAll("img");
+// Loop through all the 'slides'
 
-// Set up counters
-let current = 0;
-let z = 0;
+slides.forEach((slide) => {
+  // Pick all the images in 'Slides'
+  const images = slide.querySelectorAll("img");
 
-slides.addEventListener("click", function () {
-  // First, add one to Z
-  z = z + 1;
+  // Set up counters
+  let current = 0;
+  let z = 1000000;
 
-  // Then add one the the z index of the current image
-  images[current].style.zIndex = z;
+  slide.addEventListener("click", function () {
+    // First, add subtract to Z
+    z = z - 1;
 
-  // Increment the current value
-  current = current + 1;
+    // Then add one the the z index of the current image
+    images[current].style.zIndex = z;
 
-  // And use a modulo operator to calculate how many images
-  // there are left in 'images'.
-  current = current % images.length;
+    // Increment the current value
+    current = current + 1;
+
+    // And use a modulo operator to calculate how many images
+    // there are left in 'images'.
+    current = current % images.length;
+  });
 });

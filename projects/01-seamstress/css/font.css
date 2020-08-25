@@ -1,6 +1,13 @@
 @font-face {
   font-family: "PT Root";
-  src: url(../assets/ptroof.woff2);
+  /* Relative link '..' means go back up one folder, then look 
+  for the folder and the file
+   */
+  src: url(../assets/ptroot.woff2);
+}
+
+body {
+  font-family: "PT Root";
 }
 
 section h2 {
